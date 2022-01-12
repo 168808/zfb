@@ -1,0 +1,85 @@
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1, user-scalable=0">
+<title>支付宝-天天领红包</title>
+<meta name="keyword" content="支付宝邀请页">
+<meta name="description" content="每天领取支付宝大红包，最高￥99元">
+<link rel="stylesheet" href="css/a.css">
+</head>
+<body id="J_body" style="">
+<div class="inLoading" id="J_inLoading">
+<div class="am-toast" style="margin-top:-100px;">
+<div class="am-toast-text">
+<span class="am-icon toast loading"></span> 加载中...
+</div>
+</div>
+</div>
+<div class="bigbox">
+<p style="height:5%"></p>
+<p style="height:12%" class="img"><a href="index.html"><img src="https://zfb-1252024493.cos.ap-chengdu.myqcloud.com/alipay.png" alt="支付宝" width="230px"></a></p>
+<div style="height:28%" class="oper_box">
+<div class="copyBut flex-box">
+<p class="flex-two">红包码 <span class="fq-shareapp-code">707934643</span>
+</p><a data-clipboard-text="707934643" id="itemCopy" href="javascript:;" class="flex-one itemCopy">复制</a>
+</div>
+<p class="cue">*复制后点击页面打开支付宝按钮唤起APP后粘粘搜索框领取红包或点击应用内长按二维码识别领红包*</p>
+</div>
+<p style="height:8%" class="img"><img src="https://zfb-1252024493.cos.ap-chengdu.myqcloud.com/zhi.png" alt=""></p>
+<p style="height:8%" class="download"><a href="alipays://">打开支付宝</a></p>
+<p style="height:8%" class="download"><a href="alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://zfb-1252024493.cos.ap-chengdu.myqcloud.com/hb.jpg">保存二维码扫码</a></p>
+<p style="height:8%" class="download"><a href="alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=HTTPS://QR.ALIPAY.COM/FKX07183ECLF0KVR3AFI67">红包转现</a></p>
+<p style="height:10%" class="cue">微信浏览器不支持跳转，请点击右上角选择用其他浏览器打开</p>
+<img style="height:20%" class="footImg" src="https://zfb-1252024493.cos.ap-chengdu.myqcloud.com/bg2.png" alt="">
+<!-- 提示层 -->
+<p class="layer">复制成功</p>
+</div>
+<script type="text/javascript" src="https://zfb-1252024493.cos.ap-chengdu.myqcloud.com/a.js"></script>
+<script type="text/javascript" src="https://zfb-1252024493.cos.ap-chengdu.myqcloud.com/b.js"></script>
+<script type="text/javascript">
+//复制文本
+var clipboard = new Clipboard('.itemCopy');
+clipboard.on('success',function(e){
+if($(".itemCopy").parents().hasClass('style1')){
+$(".layer").fadeIn().text("复制成功")
+setTimeout(function(){
+$(".layer").fadeOut()
+},
+1500);
+}else{
+$(".layer").fadeIn().text("复制成功")
+setTimeout(function(){
+$(".layer").fadeOut()
+},
+1500);
+$(".style2 .stpe1").hide()
+$(".style2 .stpe2").show()
+}
+});
+clipboard.on('error',function(e) {
+$(".layer").fadeIn().text("您的浏览器不支持复制功能，请手动复制框内内容")
+setTimeout(function(){
+$(".layer").fadeOut()
+},
+1500);
+});
+//获取口令
+var koulin = "707934643";
+$("#itemCopy").attr("data-clipboard-text", koulin);
+$(".fq-shareapp-code").text(koulin);
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0774cbe944c995d21da7093f9c1609cd";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</body>
+
+</html>
